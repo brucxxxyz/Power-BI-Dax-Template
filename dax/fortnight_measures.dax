@@ -1,0 +1,21 @@
+-- Last Fortnight Sales
+Last Fortnight Sales = 
+CALCULATE(
+    [Sales],
+    DATESBETWEEN(
+        'Date'[Date],
+        TODAY() - WEEKDAY(TODAY(), 2) - 14,
+        TODAY() - WEEKDAY(TODAY(), 2) - 1
+    )
+)
+
+-- Previous Fortnight Sales
+Previous Fortnight Sales = 
+CALCULATE(
+    [Sales],
+    DATESBETWEEN(
+        'Date'[Date],
+        TODAY() - WEEKDAY(TODAY(), 2) - 28,
+        TODAY() - WEEKDAY(TODAY(), 2) - 15
+    )
+)
