@@ -1,0 +1,21 @@
+-- Last Week Sales
+Last Week Sales = 
+CALCULATE(
+    [Sales],
+    DATESBETWEEN(
+        'Date'[Date],
+        TODAY() - WEEKDAY(TODAY(), 2) - 7,
+        TODAY() - WEEKDAY(TODAY(), 2) - 1
+    )
+)
+
+-- Previous Week Sales
+Previous Week Sales = 
+CALCULATE(
+    [Sales],
+    DATESBETWEEN(
+        'Date'[Date],
+        TODAY() - WEEKDAY(TODAY(), 2) - 14,
+        TODAY() - WEEKDAY(TODAY(), 2) - 8
+    )
+)
