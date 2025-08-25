@@ -18,4 +18,4 @@ All measures are designed for rolling week logic (Sunday-ending) and use TODAY()
 
 ## 🧠 Author
 
-Bruce — Freelance Data Automation Specialist (Auckland, NZ)
+Bruce - Data Scientist (Auckland, NZ)
